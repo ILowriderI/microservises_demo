@@ -24,7 +24,7 @@ public class CustomerService {
 
 
         FraudCheckResponse response = restTemplate.getForObject(
-                "http://localhost:8081/api/fraud/{customerId}",
+                "http://FRAUD/api/fraud/{customerId}",
                 FraudCheckResponse.class,
                 customer.getId()
         );
